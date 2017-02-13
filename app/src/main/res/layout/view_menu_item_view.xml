@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="android.view.View"/>
+        <variable name="hasTopDivider" type="java.lang.Boolean"/>
+        <variable name="hasBottomDivider" type="java.lang.Boolean"/>
+        <variable name="menuText" type="java.lang.String"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_divider_color"
+            android:visibility="@{hasTopDivider.booleanValue() ? View.VISIBLE : View.GONE}"
+            />
+        <RelativeLayout
+            android:id="@+id/menu_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/menu_item_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/menu_item_icon"
+                android:textSize="13sp"
+                android:textColor="@color/color_normal_black_color"
+                android:text="@{menuText}"
+                />
+            <!--<ImageView-->
+                <!--android:id="@+id/icon_right_arrow"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:src="@mipmap/icon_next01_normal"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_num"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@drawable/shape_red_circle"-->
+                <!--android:layout_toLeftOf="@id/icon_right_arrow"-->
+                <!--android:textSize="11sp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:gravity="center"-->
+                <!--/>-->
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_divider_color"
+            android:visibility="@{hasBottomDivider.booleanValue() ? View.VISIBLE : View.GONE}"
+            />
+    </LinearLayout>
+</layout>

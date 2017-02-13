@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:gallery="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.example.like.mylibrary.Gallery
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        gallery:gallery_padding_top="0dp"
+        gallery:gallery_padding_bottom="0dp"
+        gallery:gallery_padding_left="30dp"
+        gallery:gallery_padding_right="30dp"
+        gallery:gallery_pics_space="0dp"
+        gallery:scaleP="0.9"
+        />
+</LinearLayout>
+</layout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SliderSwitcher">
+        <attr name="bgOff" format="reference"/>
+        <attr name="bgOn" format="reference"/>
+        <attr name="button" format="reference"/>
+        <attr name="status" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="MenuItemView">
+        <attr name="top_divider" format="boolean"/>
+        <attr name="bottom_divider" format="boolean"/>
+        <attr name="has_right_arrow" format="boolean"/>
+        <attr name="text_content" format="string"/>
+        <attr name="icon_res_id" format="integer"/>
+        <attr name="icon_width" format="integer"/>
+        <attr name="icon_height" format="integer"/>
+    </declare-styleable>
+</resources>
